@@ -1,0 +1,9 @@
+pluginManagement {
+    repositories {
+        mavenLocal()
+        gradlePluginPortal()
+    }
+}
+
+include 'TCS34725I2CRoboRio'
+project(':TCS34725I2CRoboRio').projectDir = new File(settingsDir, '../TCS34725I2CRoboRio')
