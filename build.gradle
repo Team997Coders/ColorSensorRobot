@@ -26,13 +26,20 @@ deploy {
     }
 }
 
+allprojects {
+    repositories {
+        jcenter()
+        maven { url "https://jitpack.io" }
+    }
+}
+
 // Defining my dependencies. In this case, WPILib (+ friends), CTRE Toolsuite (Talon SRX)
 // and NavX.
 dependencies {
     compile wpilib()
     compile ctre()
     compile navx()
-    compile project(path: ':TCS34725I2CRoboRio')
+    compile 'com.github.Team997Coders:TCS34725I2CRoboRio:master-SNAPSHOT'
 }
 
 // Setting up my Jar File. In this case, adding all libraries into the main jar ('fat jar')
