@@ -39,7 +39,7 @@ dependencies {
     compile wpilib()
     compile ctre()
     compile navx()
-    compile 'com.github.Team997Coders:TCS34725I2CRoboRio:master-SNAPSHOT'
+    compile 'com.github.Team997Coders:TCS34725I2CRoboRio:0.1.0'
 }
 
 // Setting up my Jar File. In this case, adding all libraries into the main jar ('fat jar')
